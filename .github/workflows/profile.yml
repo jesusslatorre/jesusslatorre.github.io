@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.repository != 'portfolio/portfolio' }}
+    if: ${{ github.repository != 'Gportfolio/Gportfolio' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -49,6 +49,6 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          branch: index-pages
           force: true
           directory: ./dist
