@@ -25,7 +25,7 @@ export default {
     },
   },
   data: {
-    position: 'Developer',
+    position: 'Desarrollador fullStack [ Javascript | Angular | PHP | SQL | Kotlin ]',
     links: [
       { name: 'github', url: 'https://github.com/jesusslatorre' }
     ],
