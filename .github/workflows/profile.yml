@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.repository != 'Gportfolio/Gportfolio' }}
+    if: ${{ github.repository != 'portfolio/portfolio' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -26,12 +26,12 @@ jobs:
       - name: Fetch Github profile
         run: yarn github:profile
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PORTFOLIO_JESUS_TOKEN }}
 
       - name: Fetch Github repositories
         run: yarn github:repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PORTFOLIO_JESUS_TOKEN }}
 
       - name: Build project
         run: yarn build
