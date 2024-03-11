@@ -46,12 +46,13 @@
         height: 150px; /* Cambiado para hacerla circular */
         border-radius: 50%; /* Cambiado para hacerla circular */
         position: absolute; /* Añadido para posicionarla */
-        top: 20px; 
+        top: 20px; /* Mantener la posición vertical actual */
         left: 50%; /* Centrar horizontalmente */
-        transform: translate(-50%, -50%); /* Centrar horizontal y verticalmente */
+        transform: translateX(-50%); /* Centrar horizontalmente */
         margin-right: 0; /* Eliminar margen derecho */
       }
     }
+    
     
     &__name {
       margin-top: 250px; /* Ajustar según necesidades */
