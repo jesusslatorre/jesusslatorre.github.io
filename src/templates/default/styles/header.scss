@@ -40,6 +40,10 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    &__text {
+      margin-top: 200px; /* Ajustar según necesidades */
+      text-align: center;
+    }
     &__name {
       margin: 35px 0 5px;
       color: #fff;
