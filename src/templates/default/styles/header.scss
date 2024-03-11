@@ -34,14 +34,14 @@
       border-radius: 50%; /* Cambiado para hacerla circular */
       position: absolute; /* Añadido para posicionarla */
       top: 10px; /* Ajustar a la esquina superior derecha */
-      right: 20px; /* Ajustar a la esquina superior derecha */
-      margin-right: 20px; /* Añadido margen derecho */
+      right: 10px; /* Ajustar a la esquina superior derecha */
+      margin-right: 10px; /* Añadido margen derecho */
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
     }
     &__name {
-      margin: 200px 0 5px;
+      margin: 220px 0 5px;
       color: #fff;
       text-shadow: 0 0 5px #000;
       font-weight: 600;
