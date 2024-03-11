@@ -39,9 +39,22 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
+    
+      /* Media query para pantallas de menos de 1200px de ancho */
+      @media only screen and (max-width: 1200px) {
+        width: 150px; /* Cambiado para hacerla circular */
+        height: 150px; /* Cambiado para hacerla circular */
+        border-radius: 50%; /* Cambiado para hacerla circular */
+        position: absolute; /* Añadido para posicionarla */
+        top: 50%; /* Centrar verticalmente */
+        left: 50%; /* Centrar horizontalmente */
+        transform: translate(-50%, -50%); /* Centrar horizontal y verticalmente */
+        margin-right: 0; /* Eliminar margen derecho */
+      }
     }
+    
     &__name {
-      margin-top: 200px; /* Ajustar según necesidades */
+      margin-top: 250px; /* Ajustar según necesidades */
       color: #fff;
       text-shadow: 0 0 5px #000;
       font-weight: 600;
